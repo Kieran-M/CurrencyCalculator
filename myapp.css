@@ -1,0 +1,150 @@
+* {
+  -webkit-user-select: none;
+  user-select: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sans-Serif;
+}
+header {
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+header {
+  height: 2rem;
+}
+
+header > h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+main {
+  margin: 0;
+  padding: 0.8rem;
+  height: 100%;
+  background-color: white;
+}
+
+.display input {
+  width: 60%;
+  height: 5vh;
+  border: none;
+  border-bottom: 2px solid rgb(0, 255, 233);
+}
+
+.calculator {
+  border-top: 4px solid rgb(0, 255, 233);
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 40%;
+  margin: 0px;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.calc-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: 15px;
+  background: rgb(0, 255, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 233, 1) 0%,
+    rgba(130, 234, 252, 1) 0%,
+    rgba(36, 223, 255, 1) 50%,
+    rgba(0, 218, 255, 1) 100%
+  );
+  height: 3 rem;
+  font-size: 2rem !important;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgb(0, 255, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 233, 1) 0%,
+    rgba(130, 234, 252, 1) 0%,
+    rgba(36, 223, 255, 1) 50%,
+    rgba(0, 218, 255, 1) 100%
+  );
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+}
+
+.openbtn {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.bankFee {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.select {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin: 1rem;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.homeCurrency {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.awayCurrency {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.flag {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  box-shadow: 0 8px 6px -6px black;
+}
+
